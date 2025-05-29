@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Corben:wght@400;700&family=Poetsen+One&display=swap');
+:root {
+    --cream-color: #ffe0c1;
+    --white-color: #fff;
+    --brown-color: #5a3a1a;
+    --caramel-color: #ceaf67;
+    --orange-color: #ff8802;
+    --dark-orange-color: #bb6605;
+}
+
+html, body {
+    height: 100%;
+    background: var(--cream-color);
+    
+}
+svg{
+    background: var(--white-color);
+}
+nav {
+    background: var(--cream-color);
+    font-size: 1.1rem;
+    font-family: "Poetsen One", sans-serif;
+    
+}
+
+.custom-navbar {
+  background: var(--cream-color);
+  font-size: 1.1rem;
+  font-family: "Poetsen One", sans-serif;
+  transition: all 0.3s ease;
+  width: 75%;
+  margin: 0 auto;
+  
+}
+
+.custom-navbar.scrolled {
+  background-color: #fff; 
+  width: 100%;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.253); 
+}
+.custom-navbar.scrolled button{
+  background: var(--white-color);
+}
+.navbar-nav .nav-link {
+  color: #000 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--dark-orange-color) !important;
+}
+
+.navbar-brand img {
+  width: 4rem;
+}
+
+form .btn {
+    outline: solid 2px black;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.2rem;
+    color: #000 !important;
+}
+
+.button-55 {
+    align-self: center;
+    background-color: #f9e0c7;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Corben", serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-55:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+    background: var(--orange-color) !important;
+}
+
+.button-55:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.navbar-toggler-icon {
+
+    width: 20px;
+    height: 35px;
+    background-size: 20px 20px;
+}
+
+.navbar-toggler {
+    border-radius: 100%;
+}
+
+
+
+/* HERO SECTION */
+.hero-section{
+    height: auto;
+    margin-top: 12rem;
+    color: #000;
+}
+.hero-section h1{
+  
+    font-family: "Poetsen One", sans-serif;
+    width: 8.8rem;
+}
+.hero-section h2, p{
+    font-family: "Bebas Neue", sans-serif;
+}
+.hero-section .hero-main-text{
+    font-size: 3rem;
+}
+.hero-section .hero-sec-text{
+    font-size: 1.4rem;
+    color: #444443;
+}
+.hero-section .img-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.hero-section .main-img {
+  width: 31.25rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: solid 10px var(--white-color);
+  position: relative; 
+  z-index: 2; 
+}
+
+.hero-section .paws-img {
+  position: absolute;
+  top: -2rem;
+  left: -11.5rem; 
+  height: 30rem;
+  max-width: 100%;
+  z-index: 1;
+}
+
+
+
+
+.saiba-main-btn {
+    width: 15rem;
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.saiba-main-btn:before {
+    
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  border-radius: 40px;
+  background-color: #ff8802;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.saiba-main-btn:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.saiba-main-btn:after {
+  background-color: #FFFFFF;
+  
+}
+
+.saiba-main-btn span {
+  z-index: 1;
+  position: relative;
+}
+
+
+
+/* Produto section */
+.produto-section{
+  background: var(--white-color);
+  min-height: 80vh;
+}
+.produto-section .col-md-4 img{
+  width: 5rem;
+}
