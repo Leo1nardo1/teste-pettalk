@@ -9,6 +9,11 @@
   --dark-orange-color: #bb6605;
   --soft-orange-color: linear-gradient(0deg, #EF9D77, #F9B291);
   --gray-color: #444443;
+  --primary-color: #ff6b35;
+  --secondary-color: #4a90e2;
+  --light-gray-color: #6c757d;
+  --lighter-gray: #f8f9fa;
+  --dark-color: #2c3e50;
 }
 
 html,
@@ -18,9 +23,6 @@ body {
 
 }
 
-svg {
-  background: var(--white-color);
-}
 
 nav {
   background: var(--cream-color);
@@ -150,8 +152,8 @@ p {
 }
 
 .hero-section .main-img {
-  width: 31.25rem;
-  height: 30rem;
+  width: 38.25rem;
+  height: 35rem;
   border-radius: 50%;
   border: solid 10px var(--white-color);
   position: relative;
@@ -161,8 +163,8 @@ p {
 
 .hero-section .paws-img {
   position: absolute;
-  top: -2rem;
-  left: -11.5rem;
+  top: 0;
+  left: -15rem;
   height: 30rem;
   max-width: 100%;
   z-index: 1;
@@ -288,12 +290,15 @@ p {
 
 .saiba-main-btn:after {
   background-color: #FFFFFF;
-
 }
 
 .saiba-main-btn span {
   z-index: 1;
   position: relative;
+}
+.saiba-main-btn:hover span {
+  color: #000;
+  text-decoration: none;
 }
 
 
@@ -305,18 +310,14 @@ p {
   padding: 3rem 0;
 }
 
-.produto-section .section-title {
-  font-family: "Poetsen One", sans-serif;
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
 
-.produto-section .section-title span {
+
+.produto-section span {
   color: var(--orange-color);
 }
 
 .produto-section .section-subtitle {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Corben", serif;
   font-size: 1.4rem;
   color: var(--gray-color);
   margin-bottom: 3rem;
@@ -328,7 +329,6 @@ p {
   justify-content: center;
   height: 100%;
   position: relative;
-  margin-right: 3rem;
 }
 
 .mockup-image {
@@ -366,7 +366,6 @@ p {
 .feature-item:hover {
   transform: translateY(-5px);
   box-shadow: 5px 5px 0 0 rgba(224, 109, 1, 0.963);
-  border-left: 4px solid var(--primary-color);
 }
 
 .feature-icon {
@@ -385,7 +384,7 @@ p {
 }
 
 .feature-content p {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Corben", serif;
   font-size: 1.1rem;
   color: var(--gray-color);
   margin: 0;
@@ -435,14 +434,196 @@ p {
   margin-top: 2rem;
 }
 
-/* SEÇÃO DE DEPOIMENTOS */
-.depoimentos-section{
-  height: 100vh;
-
-background: #FF8349;
-background: linear-gradient(225deg, #FF8349, #FFAEC6);
+/* SEÇÃO DE FEEDBACK */
+.feedback-section {
+  background: #FF8349;
+  background: linear-gradient(225deg, #FF8349, #FFAEC6);
+  padding: 5rem 0;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
+
+.bg-illustration {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+
+.bg-illustration {
+  top: 3%;
+  right: 1%;
+  width: 400px;
+  height: auto;
+}
+.bg-illustration~.debate-2{
+  top: 55%;
+  left: -3%;
+  width: 400px;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
+.section-title {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 3.5rem;
+  color: var(--dark-color);
+  margin-bottom: 1.4rem;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.section-subtitle {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  color: var(--gray-color);
+  margin-bottom: 3rem;
+}
+
+.feedback-card {
+  background: var(--white-color);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.feedback-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.336);
+
+}
+
+.feedback-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 20px 20px 0 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.user-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.feedback-card:hover .user-picture {
+  transform: scale(1.1);
+}
+
+.user-details h6 {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 1.1rem;
+  color: var(--dark-color);
+  margin: 0;
+}
+
+.user-details .user-role {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.9rem;
+  color: var(--light-gray-color);
+  margin: 0;
+}
+
+.quote-icon img {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.feedback-text {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.bottom-decoration {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.bottom-decoration img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.feedback-card:hover .bottom-decoration {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 3px;
+  margin-top: 0.5rem;
+}
+
+.star {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+footer{
+  background: #FF8349;
+  background: linear-gradient(225deg, #FF8349, #FFAEC6);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .feedback-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .quote-icon {
+    font-size: 1.5rem;
+    width: 25px;
+    height: 25px;
+  }
+}
 
 
 
