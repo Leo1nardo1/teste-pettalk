@@ -47,7 +47,7 @@ nav {
   box-shadow: 0 8px 6px rgba(0, 0, 0, 0.253);
 }
 
-.custom-navbar.scrolled button {
+.custom-navbar.scrolled .btn {
   background: var(--cream-color);
 }
 
@@ -835,6 +835,7 @@ p {
   position: absolute;
   border-radius: 50%;
   animation: float 3.5s ease-in-out infinite;
+  opacity: 0.7;
 }
 
 .floating-decoration img:nth-child(1) {
