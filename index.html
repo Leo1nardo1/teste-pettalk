@@ -10,7 +10,10 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>PetTalk</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="shortcut icon" href="assets/images/PetTalk-logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/pet-dono-icone.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
 </head>
 
 <body>
@@ -34,14 +37,14 @@
             <a class="nav-link" href="#feedback">Depoimentos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Planos</a>
+            <a class="nav-link" href="#planos">Planos</a>
           </li>
           <li class="nav-item d-lg-none">
-            <a class="nav-link" href="#">Fale Conosco</a>
+            <a class="nav-link" href="#fale-conosco">Fale Conosco</a>
           </li>
         </ul>
         <div class="fale-conosco d-none d-lg-flex ms-auto">
-          <button class="btn button-55" type="submit">Fale Conosco</button>
+          <a class="btn button-55" href="#fale-conosco">Fale Conosco</a>
         </div>
       </div>
     </div>
@@ -77,7 +80,8 @@
     <div class="container p-5">
       <div class="text-center mb-5">
         <h2 class="section-title">Conheça o <span class="border-bottom border-dark border-2">PetTalk</span></h2>
-        <p class="section-subtitle">O <span>PetTalk</span> é um aplicativo inovador criado para transformar a forma como
+        <p class="section-subtitle">Desenvolvido pela empresa de tecnologia <span>TecMind</span>, o <span>PetTalk</span>
+          é um aplicativo inovador criado para transformar a forma como
           você se conecta com seu pet. Combinando inteligência artificial, análise comportamental e tecnologia de ponta,
           o <span>PetTalk</span> interpreta sinais e comportamentos do seu animal de estimação, ajudando você a entender
           o que ele está tentando dizer.</p>
@@ -134,10 +138,10 @@
   <!-- SEÇÃO DE FEEDBACK -->
   <section class="feedback-section" id="feedback">
     <div class="bg-illustration">
-      <img src="assets/images/debate.png" alt="Decorative pet illustration">
+      <img src="assets/images/debate.png" alt="Pata ilustração">
     </div>
     <div class="bg-illustration debate-2">
-      <img src="assets/images/debate1.png" alt="Decorative pet illustration">
+      <img src="assets/images/debate1.png" alt="Pata ilustração">
     </div>
     <div class="container">
       <div class="text-center mb-5">
@@ -150,7 +154,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feedback-card">
-            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt=""></div>
+            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt="Aspas ilustração"></div>
             <div class="user-info">
               <img src="assets/images/perfil-mulher.jpg" alt="Maria Silva" class="user-picture">
               <div class="user-details">
@@ -176,7 +180,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feedback-card">
-            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt=""></div>
+            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt="Aspas"></div>
             <div class="user-info">
               <img src="assets/images/perfil-homem.jpg" alt="João Santos" class="user-picture">
               <div class="user-details">
@@ -202,7 +206,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feedback-card">
-            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt=""></div>
+            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt="Aspas"></div>
             <div class="user-info">
               <img src="assets/images/perfil-mulher-2.jpg" alt="Ana Costa" class="user-picture">
               <div class="user-details">
@@ -228,7 +232,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feedback-card">
-            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt=""></div>
+            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt="Aspas"></div>
             <div class="user-info">
               <img src="assets/images/perfil-homem-2.jpg" alt="Carlos Mendes" class="user-picture">
               <div class="user-details">
@@ -254,7 +258,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feedback-card">
-            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt=""></div>
+            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt="Aspas"></div>
             <div class="user-info">
               <img src="assets/images/perfil-mulher-3.jpg" alt="Fernanda Lima" class="user-picture">
               <div class="user-details">
@@ -279,7 +283,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="feedback-card">
-            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt=""></div>
+            <div class="quote-icon"><img src="assets/images/aspas-icone-2.png" alt="Aspas"></div>
             <div class="user-info">
               <img src="assets/images/perfil-homem-3.jpg" alt="Fernanda Lima" class="user-picture">
               <div class="user-details">
@@ -307,65 +311,189 @@
   </section>
 
 
+  <section class="planos-section" id="planos">
+  
+    <div class="floating-decoration">
+      <img src="assets/images/paw-footprint.png" alt="pata 1">
+      <img src="assets/images/paw-footprint.png" alt="pata 2">
+      <img src="assets/images/paw-footprint.png" alt="pata 3">
+      <img src="assets/images/paw-footprint.png" alt="pata 4">
+      <img src="assets/images/paw-footprint.png" alt="pata 5">
+      <img src="assets/images/paw-footprint.png" alt="pata 6">
+    </div>
 
-  <div class="container">
-    <footer class="py-5">
+    <div class="container position-relative">
+     
+      <div class="text-center mb-5">
+        <h2 class="section-title">Escolha Seu Plano</h2>
+        <p class="section-subtitle">Conecte-se com seu pet de forma inteligente e transforme essa relação especial</p>
+      </div>
+
+ 
+      <div class="row justify-content-center">
+        <!-- PetTalk Plano Mini -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3 class="plan-name">PetTalk Mini</h3>
+              <p class="plan-description">Perfeito para começar a entender seu pet</p>
+              <div class="plan-price">
+                <span class="currency">R$</span>
+                <span class="price-value">349</span>
+                <span class="price-period">/mês</span>
+              </div>
+            </div>
+
+            <ul class="benefits-list">
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Análise comportamental básica com IA
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Notificações em tempo real
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Relatórios semanais de bem-estar
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Suporte via chat 24/7
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Histórico de atividades (30 dias)
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Conexão com até 2 pets
+              </li>
+            </ul>
+
+            <button class="plan-button btn-secondary">
+              Começar Agora
+            </button>
+          </div>
+        </div>
+
+        <!-- PetTalk Plano Plus -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="plan-card featured">
+            <div class="popular-badge">Mais Popular</div>
+
+            <div class="plan-header">
+              <h3 class="plan-name">PetTalk Plus</h3>
+              <p class="plan-description">A experiência completa para tutores exigentes</p>
+              <div class="plan-price">
+                <span class="currency">R$</span>
+                <span class="price-value">499</span>
+                <span class="price-period">/mês</span>
+              </div>
+            </div>
+
+            <ul class="benefits-list">
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Análise comportamental avançada com IA
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Notificações inteligentes personalizadas
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Relatórios detalhados diários
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Suporte prioritário com especialistas
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Histórico completo ilimitado
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Conexão com pets ilimitados
+              </li>
+              <li class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                Consultas veterinárias online
+              </li>
+            </ul>
+
+            <div class="special-feature">
+              <div class="feature-title">🏠 Integração Smart Home</div>
+              <p class="feature-description">
+                Compatível com Alexa e Google Home para controle por voz e automação residencial
+              </p>
+            </div>
+
+            <button class="plan-button btn-primary">
+              Assinar Premium
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <div class="text-center mt-5">
+        <p>
+          💳 Sem taxas de cancelamento • 🔒 Dados 100% seguros • 📱 Disponível para iOS e Android
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5" id="fale-conosco">
+    <div class="container">
       <div class="row">
         <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
+          <h5>Seções</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class=" p-0 text-body-secondary">• Início</a></li>
+            <li class="nav-item mb-2"><a href="#produto" class=" p-0 text-body-secondary">• O Produto</a></li>
+            <li class="nav-item mb-2"><a href="#feedback" class=" p-0 text-body-secondary">• Depoimentos</a></li>
+            <li class="nav-item mb-2"><a href="#planos" class=" p-0 text-body-secondary">• Planos</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
+        <div class="col-6 col-md-3 mb-3">
+          <h5>Contato</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2">• E-mail: suporte@pettalk.com</li>
+            <li class="nav-item mb-2">• Telefone: (71) 4002-8922</li>
+            <li class="nav-item mb-2">• Atendimento: Seg a Sex, das 9h às 18h</li>
           </ul>
         </div>
         <div class="col-md-5 offset-md-1 mb-3">
           <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of what's new and exciting from us.</p>
+            <h5>Tem alguma dúvida?</h5>
+            <p>Preencha seu E-mail aqui e respondemos rapidinho!</p>
             <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
-                class="visually-hidden">Email address</label> <input id="newsletter1" type="email" class="form-control"
-                placeholder="Email address"> <button class="btn btn-primary" type="button">Subscribe</button> </div>
+                class="visually-hidden">E-mail </label> <input id="newsletter1" type="email" class="form-control"
+                placeholder="E-mail"> <button class="btn inscrever-btn" type="button">Enviar</button> </div>
           </form>
         </div>
       </div>
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>© 2025 Company, Inc. All rights reserved.</p>
+        <p>© 2025 PetTalk, Inc. Todos os direitos reservados.</p>
         <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24"
-                height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24"
-                height="24" aria-hidden="true">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#" aria-label="Instagram">
+              <i class="bi bi-instagram text-dark" style="font-size: 1.5rem;"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#" aria-label="Facebook">
+              <i class="bi bi-facebook text-dark" style="font-size: 1.5rem;"></i>
+            </a>
+          </li>
         </ul>
       </div>
-    </footer>
-  </div>
+    </div>
+
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
