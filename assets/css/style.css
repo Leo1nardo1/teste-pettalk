@@ -1675,6 +1675,12 @@ input:checked+.toggle-slider:before {
   }
 
   .accessibility-close {
-    top: 3%;
+    top: 9px;
+    
   }
+  .accessibility-close img {
+  width: 30px;
+  height: 30px;
+  filter: none;
+}
 }
