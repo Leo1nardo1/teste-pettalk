@@ -705,6 +705,20 @@ p {
   font-size: 0.8rem;
   flex-shrink: 0;
 }
+.disavantage-icon {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #a73128, #c95e20);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
 
 .plan-button {
   width: 100%;
