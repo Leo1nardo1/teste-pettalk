@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const darkModeCard = document.querySelector('.accessibility-card.dark-mode-toggle');
     const dyslexicCard = document.querySelector('.accessibility-card.dyslexic-mode-card');
-    const fontSizeCard = document.querySelector('.accessibility-card.text-size-card');
     const highlightCard = document.querySelector('.accessibility-card.highlight-links');
     const cursorSizeCard = document.querySelector('.accessibility-card.cursor-size-card');
     const textSpacingCard = document.querySelector('.accessibility-card.text-spacing');
@@ -86,51 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    /********************** TAMANHO DA FONTE **************************/
-    function setFontSize(size) {
-        const isMobile = window.innerWidth <= 480;
+   
 
-        if (isMobile && size > 1) {
-            // Tamanho de fonte mobile
-            document.documentElement.style.setProperty('--font-size-multiplier', 1 + (size - 1) * 0.6);
-        } else {
-            // Telas maiores que smartphones
-            document.documentElement.style.setProperty('--font-size-multiplier', size);
-        }
-
-        localStorage.setItem('fontSize', size);
-
-        if (fontSizeCard) {
-            if (size > 1) {
-                fontSizeCard.classList.add('active');
-            } else {
-                fontSizeCard.classList.remove('active');
-            }
-        }
-    }
-
-    // Checa o tamanho da tela ao redimensionar
-    window.addEventListener('resize', function () {
-        const savedSize = parseFloat(localStorage.getItem('fontSize')) || 1;
-        setFontSize(savedSize);
-    });
-
-    const savedFontSize = localStorage.getItem('fontSize');
-    if (savedFontSize) {
-        setFontSize(parseFloat(savedFontSize));
-    }
-
-    if (fontSizeCard) {
-        fontSizeCard.addEventListener('click', function () {
-            const isActive = fontSizeCard.classList.contains('active');
-
-            // Caso ativo, desligue (1), se não, ative (1.5)
-            const newSize = isActive ? 1 : 1.5;
-
-            setFontSize(newSize);
-        });
-    }
-
+    
     /********************** DESTACAR LINKS  **************************/
     function setHighlight(enabled) {
         if (enabled) {
@@ -304,7 +261,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (resetCard) {
         resetCard.addEventListener('click', function () {
             setDarkMode(false);
-            setFontSize(1);
             setHighlight(false);
             setDyslexicFont(false);
             setCustomCursor(false);
