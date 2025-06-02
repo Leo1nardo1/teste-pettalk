@@ -111,10 +111,12 @@ nav {
   width: 20px;
   height: 35px;
   background-size: 20px 20px;
+  
 }
 
 .navbar-toggler {
   border-radius: 100%;
+  background: white;
 }
 
 
@@ -1595,15 +1597,15 @@ input:checked+.toggle-slider:before {
   }
 
   .accessibility-button {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     top: 20%;
     right: 15px;
   }
 
   .accessibility-button img {
-    width: 24px;
-    height: 24px;
+    width: 15px;
+    height: 15px;
   }
 
   .accessibility-card {
